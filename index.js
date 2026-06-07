@@ -5,7 +5,10 @@ import express from 'express';
 const app = express();
 
 app.get('/', (req, res) => {
-    res.send('Hello from ExCloud VPS 🚀!');
+    res.send({
+        message: 'Hello from ExCloud VPS 🚀!',
+        success: true
+    });
 });
 
 app.listen(3000, () => {
