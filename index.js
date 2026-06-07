@@ -4,7 +4,7 @@ import express from 'express';
 
 const app = express();
 
-app.get('/', (req, res) => {
+app.get('/hello', (req, res) => {
     res.send({
         message: 'Hello from ExCloud VPS 🚀!',
         success: true,
